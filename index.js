@@ -51,7 +51,7 @@ app.post("/emails", async (req, res) => {
 
     // Filtrar correos de la última hora
     const oneHourAgo = new Date();
-    oneHourAgo.setHours(oneHourAgo.getHours() - 24); // Restar 1 hora
+    oneHourAgo.setHours(oneHourAgo.getHours() - 3); // Restar 1 hora
     const sinceTime = oneHourAgo.toISOString();
     console.log(`Fecha de búsqueda (última hora): ${sinceTime}`);
 
